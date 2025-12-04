@@ -29,7 +29,7 @@ jobs:
       - name: Frontend - Install and Lint
         working-directory: ./frontend
         run: |
-          npm ci
+          npm install
           npm run lint || echo "Lint completed"
 
       - name: Frontend - Run Tests
@@ -40,7 +40,7 @@ jobs:
 
       - name: Backend - Install dependencies
         working-directory: ./backend
-        run: npm ci
+        run: npm install
 
       - name: Backend - Run Tests
         working-directory: ./backend
