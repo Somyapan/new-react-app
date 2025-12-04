@@ -40,7 +40,7 @@ services:
       DB_USER: ${DB_USER:-visitor_user}
       DB_PASSWORD: ${DB_PASSWORD:-visitor_password}
       DB_NAME: ${DB_NAME:-visitor_db}
-      DB_SSL: false
+      DB_SSL: "false"
     depends_on:
       postgres:
         condition: service_healthy
